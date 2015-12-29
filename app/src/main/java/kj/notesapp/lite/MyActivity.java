@@ -41,8 +41,6 @@ public class MyActivity extends Activity {
     String SP_UI_FLOW = "notesapp.ui";
     String sp_key_locked = "locked";
 
-    public static final String PREFS_NAME = "kj.notesapp.lite_preferences.xml";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

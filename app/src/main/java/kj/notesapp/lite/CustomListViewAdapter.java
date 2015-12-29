@@ -10,24 +10,17 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import kj.notesapp.lite.datamodel.DatabaseHandler;
 
@@ -38,8 +31,6 @@ public class CustomListViewAdapter extends BaseAdapter
     List<ListViewItem> items;
     Context ourContext;
     Typeface tF;
-
-
 
     public CustomListViewAdapter(Activity context, List<ListViewItem> items) {
         super();
@@ -107,22 +98,27 @@ public class CustomListViewAdapter extends BaseAdapter
         vi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(ourContext, "ID: " + item.id, Toast.LENGTH_SHORT).show();
-                Handler mHandler = new Handler();
-                mHandler.postDelayed(new Runnable() {
 
-                    @Override
-                    public void run() {
-                        //start your activity here
-                        Intent myIntent = new Intent(ourContext, ViewNote.class);
-                        myIntent.putExtra("id", "" + item.id); //Optional parameters
-                        myIntent.putExtra("title", item.title);
-                        myIntent.putExtra("note", item.note);
-                        ourContext.startActivity(myIntent);
+                if (!StaticData.ONE_CLICK) {
+                    StaticData.ONE_CLICK = true;
 
-                    }
+                    Handler mHandler = new Handler();
+                    mHandler.postDelayed(new Runnable() {
 
-                }, 200);
+                        @Override
+                        public void run() {
+                            //start your activity here
+                            Intent myIntent = new Intent(ourContext, ViewNote.class);
+                            myIntent.putExtra("id", "" + item.id); //Optional parameters
+                            myIntent.putExtra("title", item.title);
+                            myIntent.putExtra("note", item.note);
+                            ourContext.startActivity(myIntent);
+
+                        }
+
+                    }, 100);
+
+                }
 
             }
 

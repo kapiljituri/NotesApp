@@ -20,4 +20,6 @@ public class StaticData {
 
     public static boolean ANIMATIONS = true;
     public static int VIEW_NOTE_ANIM_DURATION = 500;
+
+    public static boolean ONE_CLICK = false;
 }

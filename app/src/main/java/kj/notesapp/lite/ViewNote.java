@@ -97,6 +97,8 @@ public class ViewNote extends Activity {
                            }
         );
 
+        StaticData.ONE_CLICK = false;
+
     }
 
 
