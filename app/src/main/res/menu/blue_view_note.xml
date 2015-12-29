@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.kapil.materialtestbed.ViewNote" >
+    <item android:id="@+id/action_edit"
+        android:title="Edit"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_blue_action_content_create"/>
+
+    <item android:id="@+id/action_share"
+        android:title="Share"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_blue_action_social_share"/>
+
+    <item android:id="@+id/action_copy"
+        android:title="Copy"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_blue_action_content_content_copy"/>
+
+    <item android:id="@+id/action_print"
+        android:title="Print"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

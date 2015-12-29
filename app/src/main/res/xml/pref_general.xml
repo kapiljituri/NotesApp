@@ -1,0 +1,79 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Appearance">
+
+        <ListPreference
+            android:key="setting_font"
+            android:title="Font"
+            android:summary="Select font"
+            android:entries="@array/settings_font_names"
+            android:entryValues="@array/settings_font_values"
+            android:defaultValue="1"/>
+
+        <CheckBoxPreference
+            android:key="setting_darktheme"
+            android:title="Dark theme"/>
+
+        <CheckBoxPreference
+            android:key="setting_animations"
+            android:title="Animations"
+            android:defaultValue="true"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Security">
+
+        <SwitchPreference
+            android:key="setting_password_switch"
+            android:title="Password"
+            android:summary="Enable/Disable password check on startup"/>
+
+    <Preference
+        android:key="setting_password"
+        android:title="Change Password"
+        android:summary="Change current password"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Workflow">
+
+        <CheckBoxPreference
+            android:key="setting_autosave"
+            android:title="Auto save"
+            android:summary="Notes will be automatically saved when you press back button"/>
+
+
+
+    </PreferenceCategory>
+<!--
+  <PreferenceCategory
+        android:title="Backup">
+
+        <Preference
+            android:key="setting_backup"
+            android:title="On device Backup"
+            android:summary="Manage backups stored on device."/>
+
+
+
+    </PreferenceCategory>
+-->
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:key="setting_about"
+            android:title="About"
+            android:summary="About Notes App"/>
+
+        <Preference
+            android:key="setting_more_apps"
+            android:title="More Apps"
+            android:summary="Check my other apps on Play Store"/>
+
+        </PreferenceCategory>
+</PreferenceScreen>

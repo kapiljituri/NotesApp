@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.kapil.materialtestbed.BackupRestore" >
+    <item android:id="@+id/action_backup"
+        android:title="Backup"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+</menu>

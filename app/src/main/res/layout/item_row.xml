@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/ripple_effect"
+    android:clickable="true"
+    android:padding="3dip">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <!--android:background="@drawable/border"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:text="Large Text"
+                    android:singleLine="true"
+                    android:id="@+id/textView4"
+                    android:paddingTop="4dp"
+                    android:hint="Untitled"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small"
+                    android:text="This is just a test. i am just testing if this app works all good or not. or if not so good then  how bad does it works."
+                    android:singleLine="true"
+                    android:id="@+id/textView6"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small"
+                    android:singleLine="true"
+                    android:text="11:00 pm"
+                    android:paddingTop="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Material.Small"
+                    android:singleLine="true"
+                    android:paddingTop="4dp"
+                    android:text="Yesterday"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textView8"
+                    android:layout_below="@+id/textView7"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <!--
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="This is Title"
+            android:id="@+id/tvTitle"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="This is my note which I wan to type in it. And all it is good"
+            android:id="@+id/tvNote"
+            android:singleLine="true"
+            android:layout_below="@+id/tvTitle"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5:00pm"
+            android:singleLine="true"
+            android:id="@+id/tvTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Yesterday"
+            android:id="@+id/tvDay"
+            android:layout_below="@+id/tvTime"
+            android:layout_alignParentEnd="true" />
+
+    -->
+    </LinearLayout>
+
+</LinearLayout>

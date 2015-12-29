@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="MyTheme" parent="@android:Theme.Material.Light.DarkActionBar">
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item> -->
+        <!--<item name="android:colorPrimary">#5677fc</item>
+        <item name="android:colorPrimaryDark">#5677fc</item> -->
+
+
+        <!--<item name="android:actionModeBackground">#5677fc</item>
+
+        <item name="android:textColorPrimary">#ffb300</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimary">@color/primary</item>ffc107 -->
+    </style>
+
+    <style name="MyEditTheme" parent="@android:Theme.Material">
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item> -->
+     <!--   <item name="android:colorPrimary">#5677fc</item>
+        <item name="android:colorPrimaryDark">#5677fc</item> -->
+
+
+        <!--<item name="android:actionModeBackground">#5677fc</item>
+
+        <item name="android:textColorPrimary">#ffb300</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimary">@color/primary</item>ffc107 -->
+    </style>
+
+</resources>

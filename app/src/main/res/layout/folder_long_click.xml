@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ripple_effect">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Edit"
+            android:gravity="center_vertical"/>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llDiscard"
+        android:layout_width="match_parent"
+        android:background="@drawable/ripple_effect"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Delete"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

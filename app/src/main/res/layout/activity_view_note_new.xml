@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.kapil.materialtestbed.ViewNote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llReveal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/rlTitle"
+                    android:background="#3f51bf"
+                    android:elevation="6dp">
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="12dp"
+                        android:textColorHint="@android:color/secondary_text_light_nodisable"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:hint="Untitled"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/etTitle"/> -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="2dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:singleLine="true"
+                        android:hint="Untitled"
+                        android:textIsSelectable="true"
+                        android:textColorHint="#7986CB"
+                        android:id="@+id/tvViewTitle"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="6dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="8dp"
+                        android:id="@+id/tvViewNote"
+                        android:textSize="17sp"
+                        android:autoLink="all"
+                        android:textIsSelectable="true"
+                        android:textColor="#444444"
+                        android:layout_alignParentStart="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llEditNote"
+    tools:context="example.kapil.materialtestbed.NewNote">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:id="@+id/rlTitle"
+                android:background="#3f51bf"
+                android:elevation="6dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibNewTitle"
+                    android:background="@drawable/ripple_circle_effect"
+                    android:src="@drawable/ic_action_av_mic"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textSize="20sp"
+                    android:textColorHint="#7986CB"
+                    android:hint="Title"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/etTitle"
+                    android:inputType="textCapSentences"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/ibNewTitle"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/etNote"
+                    android:hint="Note"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColorHint="#bbbbbb"
+                    android:textSize="17sp"
+                    android:textColor="#444444"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+
+                    </EditText>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibNewNote"
+                    android:paddingTop="4dp"
+                    android:src="@drawable/ic_action_av_mic_dark"
+                    android:background="@drawable/ripple_circle_effect"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+            <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/etNote"
+                android:hint="Note"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColorHint="#bbbbbb"
+                android:textSize="17sp"
+                android:textColor="#444444"
+                android:inputType="textCapSentences|textMultiLine"
+                android:layout_below="@+id/etTitle"
+                android:layout_centerHorizontal="true" />
+-->
+        </LinearLayout>
+
+
+        <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:imeOptions="actionNext"
+            android:background="#5677fc"
+            android:elevation="6dp"
+            android:singleLine="true"
+            android:paddingTop="2dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="20sp"
+            android:textColorHint="#91a7ff"
+            android:hint="Title"
+            android:textColor="@android:color/white"
+            android:id="@+id/etTitle"
+            android:inputType="textCapSentences"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etNote"
+            android:hint="Note"
+            android:textSize="17sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColorHint="#bbbbbb"
+            android:textColor="#444444"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_below="@+id/etTitle"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+-->
+    </ScrollView>
+
+
+</LinearLayout>
